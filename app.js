@@ -25,7 +25,7 @@ var app = express();
 // proxy
 
 var proxy = require('express-http-proxy'); 
-app.use('/proxy', proxy('localhost:3000'));
+app.use('/proxy', proxy('https://juanrodriguez32.github.io'));
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
